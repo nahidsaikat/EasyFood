@@ -1,0 +1,95 @@
+﻿<Page
+    x:Class="EasyFood.Controller.AllOrdersDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EasyFood.Controller"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFFBF7F7" >
+        <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollBarVisibility="Auto"
+                      >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                
+                <TextBlock x:ConnectionId='1' x:Name="OrderNoTextBlock"
+                           HorizontalAlignment="Center"
+                           FontSize="22"
+                           Foreground="#FF4B1E1E"
+                           Margin="20, 5, 0, 0"
+                           FontStyle="Italic"
+                           />
+                <TextBlock x:ConnectionId='2' x:Name="OrderByTextBlock"
+                           FontSize="18"
+                           Margin="20, 10, 0, 0"
+                           Grid.Row="1"
+                           />
+                <TextBlock x:ConnectionId='3' x:Name="OrderDateTextBlock"
+                           FontSize="18"
+                           Grid.Row="2"
+                           Margin="20, 10, 0, 0"
+                           />
+                <TextBlock x:ConnectionId='4' x:Name="OrderTimeTextBlock"
+                           FontSize="18"
+                           Grid.Row="3"
+                           Margin="20, 10, 0, 0"
+                           />
+                <TextBlock x:ConnectionId='5' x:Name="OrderItemsTextBlock"
+                           FontSize="18"
+                           Grid.Row="4"
+                           Text="Order Items:"
+                           Margin="20, 10, 0, 0"
+                           />
+                <ListView x:ConnectionId='6' x:Name="OrderItemsListView" 
+                          Grid.Row="5"
+                          SelectionMode="None"
+                          Margin="20, 0, 20, 0"
+                          />
+                <TextBlock x:ConnectionId='7' x:Name="TotalCostTextBlock"
+                           FontSize="18"
+                           Grid.Row="6"
+                           Margin="20, 10, 0, 0"
+                           />
+                <TextBlock x:ConnectionId='8' x:Name="ProcessTimeTextBlock"
+                           FontSize="18"
+                           Grid.Row="7"
+                           Margin="20, 10, 0, 0"
+                           />
+                <CheckBox x:ConnectionId='9' x:Name="AcknowledgeCheckBox"
+                          Content="Acknowledged"
+                          Margin="20, 10, 0, 0"
+                          IsEnabled="False"
+                          Grid.Row="8"
+                          />
+                <CheckBox x:ConnectionId='10' x:Name="DeliveryCheckBox"
+                          Content="Deliveried"
+                          Margin="20, 10, 0, 0"
+                          IsEnabled="False"
+                          Grid.Row="9"
+                          />
+                <CheckBox x:ConnectionId='11' x:Name="CancelCheckBox"
+                          Content="Canceled"
+                          Margin="20, 10, 0, 0"
+                          IsEnabled="False"
+                          Grid.Row="10"
+                          />
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
+

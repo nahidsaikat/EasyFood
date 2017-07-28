@@ -1,0 +1,1 @@
+H:\Programming\Windows Phone\10\EasyFood\EasyFood\EasyFood.csproj;x86

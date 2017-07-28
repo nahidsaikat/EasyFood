@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="EasyFood.View.MyOrder"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EasyFood.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF90B8C1">
+    <!--<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
+        <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollBarVisibility="Auto"
+                      >
+            <StackPanel Orientation="Vertical"
+                        x:Name="MyOrderStackPanel"
+                        HorizontalAlignment="Center"
+                        Margin="0,20,0,0"
+                        >
+            </StackPanel>
+            <!--<ListView x:Name="MyOrderListView" 
+                      Padding="20,10,20,10"
+                      />-->
+        </ScrollViewer>
+    </Grid>
+</Page>

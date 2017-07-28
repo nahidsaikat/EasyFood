@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="EasyFood.View.SubmittedOrder"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EasyFood.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:ConnectionId='1' x:Name="TitleTextBlock"
+                   Margin="30,20,0,0"
+                   Foreground="DarkBlue"
+                   FontWeight="SemiBold" 
+                   FontSize="24" 
+                   HorizontalAlignment="Center"
+                   />
+        <StackPanel x:ConnectionId='2' x:Name="MainStackPanel"
+                    Margin="30,10,0,0"
+                    Grid.Row="1"
+                    >
+        </StackPanel>
+        <TextBlock x:ConnectionId='3' x:Name="TotalTextBlock"
+                   Margin="30,10,0,0"
+                   Text=""
+                   Grid.Row="2"
+                   FontSize="20"
+                   Foreground="#FF113C23"
+                   HorizontalAlignment="Center"
+                   />
+    </Grid>
+</Page>
+
